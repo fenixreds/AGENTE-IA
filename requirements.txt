@@ -3,8 +3,8 @@ langchain-community
 langchain-openai
 langchain-cohere
 langchain-huggingface
-pypdf
-pandas
+langchain-chroma
 chromadb
-faiss-cpu
+pypdf
 python-dotenv
+sentence-transformers
