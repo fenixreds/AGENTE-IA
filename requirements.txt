@@ -1,0 +1,10 @@
+langchain
+langchain-community
+langchain-openai
+langchain-cohere
+langchain-huggingface
+pypdf
+pandas
+chromadb
+faiss-cpu
+python-dotenv
