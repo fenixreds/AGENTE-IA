@@ -1,7 +1,7 @@
 from langchain_chroma import Chroma
 from langchain_cohere import CohereEmbeddings
+from src.config import EMBEDDING_MODEL
 
-EMBEDDING_MODEL = "embed-v4.0"
 
 def get_embeddings():
     return CohereEmbeddings(model=EMBEDDING_MODEL)
