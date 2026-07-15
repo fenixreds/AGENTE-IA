@@ -7,3 +7,5 @@ langchain-chroma
 chromadb
 pypdf
 python-dotenv
+fastapi
+uvicorn[standard]
