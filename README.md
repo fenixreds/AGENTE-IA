@@ -290,3 +290,8 @@ Al recibir una pregunta en `/api/chat`:
 | `DOCUMENT_PATH` | Ruta al PDF fuente. | `data/documento.pdf` |
 | `VECTOR_DB_DIR` | Directorio de la base vectorial. | `db` |
 | `COLLECTION_NAME` | Nombre de la colección en ChromaDB. | `documentos_rag` |
+
+
+## Evidencia de despliegue
+
+https://agente-ia.jarhapps.com/
