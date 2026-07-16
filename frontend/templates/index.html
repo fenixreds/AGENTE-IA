@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agente IA</title>
+  <title>Guía de Onboarding – Santo Pegasus Soluciones</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
@@ -13,16 +13,49 @@
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
       <div class="logo">
-        <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-label="Agente IA">
-          <circle cx="16" cy="16" r="14" stroke="var(--color-primary)" stroke-width="2"/>
-          <circle cx="16" cy="16" r="6" fill="var(--color-primary)"/>
-          <path d="M16 2 L16 8 M16 24 L16 30 M2 16 L8 16 M24 16 L30 16" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"/>
+        <!-- Logo Santo Pegasus: caballo alado minimalista -->
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-label="Santo Pegasus Soluciones">
+          <path d="M16 4 C10 4 6 8 6 13 C6 17 8 20 12 22 L12 27 L16 24 L20 27 L20 22 C24 20 26 17 26 13 C26 8 22 4 16 4Z" stroke="var(--color-primary)" stroke-width="1.5" fill="none"/>
+          <path d="M8 10 C5 8 3 10 4 13" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M24 10 C27 8 29 10 28 13" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="16" cy="14" r="2.5" fill="var(--color-primary)" opacity="0.8"/>
         </svg>
-        <span class="logo-text">Agente IA</span>
+        <span class="logo-text">Santo Pegasus</span>
       </div>
       <button class="icon-btn" id="new-chat-btn" aria-label="Nueva conversación" title="Nueva conversación">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
       </button>
+    </div>
+
+    <!-- Sección FAQ Onboarding -->
+    <div class="faq-section">
+      <p class="nav-label">Preguntas frecuentes</p>
+      <ul class="faq-list" role="list">
+        <li>
+          <button class="faq-item" data-prompt="¿Cuáles son los primeros pasos que debo seguir en mi primer día como desarrollador en Santo Pegasus?">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            ¿Qué hago en mi primer día?
+          </button>
+        </li>
+        <li>
+          <button class="faq-item" data-prompt="¿Qué herramientas, accesos y configuraciones necesito instalar para comenzar a desarrollar?">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            ¿Qué herramientas debo instalar?
+          </button>
+        </li>
+        <li>
+          <button class="faq-item" data-prompt="¿Cuál es el flujo de trabajo con Git y cómo es el proceso para hacer un pull request en Santo Pegasus?">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><path d="M6 9v12"/></svg>
+            ¿Cómo es el flujo de trabajo con Git?
+          </button>
+        </li>
+        <li>
+          <button class="faq-item" data-prompt="¿Cuáles son las normas de código, estándares y buenas prácticas que debo seguir en mis proyectos?">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            ¿Qué estándares de código debo seguir?
+          </button>
+        </li>
+      </ul>
     </div>
 
     <nav class="sidebar-nav">
@@ -50,7 +83,7 @@
       <button class="icon-btn" id="sidebar-toggle" aria-label="Abrir menú">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
-      <span class="mobile-title">Agente IA</span>
+      <span class="mobile-title">Onboarding IA</span>
       <button class="icon-btn" id="mobile-new-chat" aria-label="Nueva conversación">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
       </button>
@@ -59,18 +92,21 @@
     <div class="chat-container" id="chat-container">
       <div class="empty-state" id="empty-state">
         <div class="empty-icon">
-          <svg width="48" height="48" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <circle cx="16" cy="16" r="14" stroke="var(--color-primary)" stroke-width="1.5"/>
-            <circle cx="16" cy="16" r="6" fill="var(--color-primary)" opacity="0.7"/>
-            <path d="M16 2 L16 8 M16 24 L16 30 M2 16 L8 16 M24 16 L30 16" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/>
+          <svg width="52" height="52" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M16 4 C10 4 6 8 6 13 C6 17 8 20 12 22 L12 27 L16 24 L20 27 L20 22 C24 20 26 17 26 13 C26 8 22 4 16 4Z" stroke="var(--color-primary)" stroke-width="1.5" fill="none"/>
+            <path d="M8 10 C5 8 3 10 4 13" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M24 10 C27 8 29 10 28 13" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="16" cy="14" r="2.5" fill="var(--color-primary)" opacity="0.8"/>
           </svg>
         </div>
-        <h2>¿En qué puedo ayudarte?</h2>
-        <p>Soy tu agente RAG. Haz preguntas sobre los documentos cargados y recibirás respuestas fundamentadas en sus contenidos.</p>
+        <div class="welcome-badge">Solo para uso interno</div>
+        <h2>¡Bienvenido al equipo, desarrollador!</h2>
+        <p class="welcome-company">Santo Pegasus Soluciones · Desarrollo de productos digitales</p>
+        <p>Soy tu asistente del <strong>Manual de Onboarding para Nuevos Desarrolladores</strong>. Consulta procesos, herramientas, estándares y todo lo que necesitas para integrarte al equipo. Usa las preguntas del panel izquierdo o escribe tu propia consulta.</p>
         <div class="suggestion-chips">
-          <button class="chip" data-prompt="¿Qué información contiene el documento principal?">¿Qué información contiene el documento?</button>
-          <button class="chip" data-prompt="Resume los puntos más importantes del documento">Resume los puntos clave</button>
-          <button class="chip" data-prompt="¿Cuáles son las conclusiones principales?">Conclusiones principales</button>
+          <button class="chip" data-prompt="¿Cuáles son los primeros pasos que debo seguir en mi primer día como desarrollador en Santo Pegasus?">Mi primer día</button>
+          <button class="chip" data-prompt="¿Qué herramientas, accesos y configuraciones necesito instalar para comenzar a desarrollar?">Herramientas y accesos</button>
+          <button class="chip" data-prompt="¿Cuáles son las normas de código, estándares y buenas prácticas que debo seguir en mis proyectos?">Estándares de código</button>
         </div>
       </div>
 
@@ -82,7 +118,7 @@
         <textarea
           id="chat-input"
           class="chat-input"
-          placeholder="Escribe tu pregunta..."
+          placeholder="Consulta el manual de onboarding..."
           rows="1"
           aria-label="Escribe tu mensaje"
           maxlength="2000"
@@ -91,10 +127,24 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg>
         </button>
       </div>
-      <p class="input-hint">El agente responde con base en los documentos cargados · <kbd>Enter</kbd> para enviar · <kbd>Shift+Enter</kbd> nueva línea</p>
+      <p class="input-hint">Asistente interno · Manual de Onboarding · <kbd>Enter</kbd> para enviar · <kbd>Shift+Enter</kbd> nueva línea</p>
     </div>
   </main>
 
   <script src="/static/js/app.js"></script>
+  <script>
+    // FAQ: insertar pregunta en el input al hacer clic
+    document.querySelectorAll('.faq-item').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const prompt = btn.getAttribute('data-prompt');
+        const input = document.getElementById('chat-input');
+        if (input) {
+          input.value = prompt;
+          input.dispatchEvent(new Event('input'));
+          input.focus();
+        }
+      });
+    });
+  </script>
 </body>
 </html>
