@@ -295,3 +295,5 @@ Al recibir una pregunta en `/api/chat`:
 ## Evidencia de despliegue
 
 https://agente-ia.jarhapps.com/
+
+![alt text](image.png)
